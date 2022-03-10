@@ -19,7 +19,7 @@ body{
 }
 .signHomepageBox{
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 100px;
     width: 300px;
     height: 300px;
 }
@@ -32,6 +32,29 @@ body{
     margin-left: 30px;
 }
 .signHomepage-inner div input {
-    
+    text-align: center;
+    width: 200px;
+    height: 40px;
     margin-top: 30px;
+    border-radius: 20px;
+    font: italic;
+    box-shadow: inset;
+    margin-right: 18px;
+
+
+}
+
+.loginBtn{
+    width: 300px;
+    height: 40 px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 12px auto;
+}
+.loginBtn:hover{
+    border: 2px solid #fff;
 }
