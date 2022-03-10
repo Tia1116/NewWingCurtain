@@ -6,52 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/itemDetail.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/itemDetail.css">
 </head>
 
 <body>
-    <div>
+    <header>
+        <!-- //logo and slogan -->
+        <div class="newWing_header_f1 container">
+            <div class="logo fl"></div>
+            <span class="slogan fr">
+                <a href="#">New Wing Curtain makeover your sweet home</a>
+            </span>
+        </div>
+        <!-- //navigation of first level menu -->
+        <div class="newWing_header_f2 container">
+            <div class="search_nav fr">
+                <input type="search" placeholder="Search">
+            </div>
+            <nav class="newWing_header_container" role="navigation">
+                <ul>
+                    <li><a href="./pages/customePages/gallery.html">Gallery</a>|</li>
+                    <li> <a href="./pages/customePages/aboutUs.html">About us</a>|</li>
+                    <li> <a href="./pages/adminPages/login.html">Login</a>|</li>
+                    <li> <a href="./pages/customePages/register.html">Register</a>|</li>
+                </ul>
+            </nav>
+        </div>
+        <!-- //navigation of product menu -->
+        <div class="newWing_header_f3 container">
+            <nav class="main_navigation fl">
+                <ul>
+                    <li><a href="./pages/customePages/products.html">On sale</a></li>
+                    <li><a href="javascript:;">Custom made</a></li>
+                    <li><a href="javascript:;">Ready made</a></li>
+                    <li><a href="javascript:;">Blinds</a></li>
+                    <li><a href="javascript:;">Tracks</a></li>
+                    <li><a href="javascript:;">Fabric</a></li>
+                    <li><a href="javascript:;">Accessories</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div class="itemDetail">
         <div class="showBox">
-            <div class="picBox">
+            <div class="picBox fl">
+                <img src="../../images/itemDetail/bigBox.jpg" alt="">
                 <div class="spicBox">
+                    <ul>
+                        <li>
+                            <img style="width: 1em;height:1em;" src="../../images/display/discuss_good.jpg" alt="">
+                        </li>
+                        <li>
+                            <img style="width: 1em;height:1em;" src="../../images/display/discuss_goods.jpg" alt="">
+                        </li>
+                        <li>
+                            <img style="width: 1em;height:1em;" src="../../images/display/discuss_goods_1.jpg" alt="">
+                        </li>
+                    </ul>
 
                 </div>
             </div>
-            <div class="infoBox">
-                <p></p>
+            <div class="infoBox fr">
+                <p class="fl">Pencil Pleat</p>
                 <div class="opt">
+                    <h1></h1>
                     <ul>
                         <li class="liactive"></li>
-                        
                     </ul>
                 </div>
             </div>
         </div>
-    <div class="main">
-        <h4>
-            The things you need to know
-        </h4>
-        <div class="tabsbox" id="tab">
-            <!-- tab 标签 -->
-            <nav class="fisrstnav">
-                <ul>
-                    <li class="liactive"><span>Info</span><span class="iconfont"></span></li>
-                    <li><span>Comments</span><span class="iconfont"></span></li>
-                </ul>
-            </nav>
+        <div class="itermBox-measure">
+            <img class="img-fitBox" src="../../images/itemDetail/how to measure.png" alt="">
+        </div>
+        <div class="main">
+            <h4>
+                The things you need to know
+            </h4>
+            <div class="tabsbox" id="tab">
+                <!-- tab 标签 -->
+                <nav class="fisrstnav">
+                    <ul>
+                        <li class="liactive"><span>Info</span><span class="iconfont"></span></li>
+                        <li><span>Comments</span><span class="iconfont"></span></li>
+                    </ul>
+                </nav>
 
-            <!-- tab 内容 -->
-            <div class="tabscon">
-                <section class="conactive">Testing info</section>
-                <section>Testing Comments</section>
+                <!-- tab 内容 -->
+                <div class="tabscon">
+                    <section class="conactive">Testing info</section>
+                    <section>Testing Comments</section>
+                </div>
             </div>
         </div>
+        <!-- <script src="../js/itemsDetail.js/info.js"></script> -->
     </div>
-    <script src="../js/itemsDetail.js/info.js"></script>
-</div>
 </body>
 
 </html>
