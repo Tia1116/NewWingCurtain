@@ -1,0 +1,56 @@
+body{
+    background-color: orange;
+}
+
+.container{
+    margin: 120px auto;
+    width: 1000px;
+    height: 350px;
+}
+
+
+.pd{
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    /* border: 1px solid rgba(138, 252, 252, 0.5); */
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+}
+.pd-goback{
+    position: absolute;
+    float: left;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: url(../images/sprites.png) -242px -5px;
+}
+.pd-goback:hover{
+    background: url(../images/sprites.png) 205px -5px;
+    background-color: azure;
+}
+.pd-pp{
+    margin-left: 20px;
+}
+.pd-pp ul{
+    position: absolute;
+    height:150px;
+    padding: 50px 15px; 
+    left: 60px;
+}
+.pd-pp ul li{
+    float: left;
+    width: 170px;
+    height: 170px;
+    background-color: black;
+}
+
+.pd-display{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 1200px;
+    height: 400px;
+    background-color: black;
+    display: none;
+}

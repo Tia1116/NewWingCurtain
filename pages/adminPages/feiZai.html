@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../js/feizai/feizai.js"></script>
+    <script src="../../js/feizai/sheer.js"></script>
+    <script src="../../js/feizai/curtain.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 8px;
+            font-size: 17px;
+        }
+        .printPaper{
+            width: 1000px;
+            height: 1400px;
+            display: none;
+        }
+        .sprintPaper{
+            width: 1000px;
+            height: 1400px;
+            display: none;
+        }
+       .firstCurtain {
+            position: relative;
+            margin-left: 0%;
+            margin-top: 8px;
+            width: 480px;
+            border: 1px solid black;
+            float: left;
+        }
+        .firstSheer {
+            position: relative;
+            margin-left: 0%;
+            margin-top: 8px;
+            width: 480px;
+            border: 1px solid black;
+            float: left;
+        }
+        p{
+            line-height: 8px;
+        }
+        input{
+            outline: none;
+        }
+        input[type="text"]{
+            text-align: center;
+            font-size: 19px;
+            font-style:italic;
+            border-radius: 2px;
+            border-style: solid;
+            border-color: black;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-width: 1px;
+            -webkit-appearance: none;
+            padding:0 1em;
+            text-decoration:none;
+        }
+        ul{
+            list-style-type: none;
+            padding-inline-start: 3px;
+        }
+        li{
+            list-style-type: none;
+            float: left;
+        }
+        li::before{
+            content:"/";
+            display:inline-block;
+            width: 5px;
+            height:10px;
+            margin-left: 5px;
+            
+        }
+
+        .orderNumber {
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .picked {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: burlywood;
+        }
+        .buttons{
+            position: relative;
+        }
+        #pcOpt{
+            margin-inline-start: 200px;
+        }
+        .clicks{
+            margin-bottom: 8px;
+        }
+    </style>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        })
+    </script>
+</head>
+
+<body>
+    <div class="header"></div>    
+    <div class="printPaper">
+    <div class="firstCurtain">
+        <div class="orderNumber">
+            <label>Order number #</label>
+            <input type="text" size="7" id='invoiceNo'>
+            <label>Order Date</label>
+            <input type="text" size="7" class="oDate" value=""><br>
+            <p >No.<input type="text" size="2" id='num' value='1'>of <input type="text" size="3" id='totalNum'>
+                Eta <input type="text" size="7" class="etaDate"></p>
+            <p> <input type="text" size="3">x<input type="text" size="3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop:
+                <input type="text" size="1"> </p>
+            <p> Design: <input type="text" size="9"> Room: <input type="text" size="9"></p>
+            <p> Colour: <input type="text" size="10"></p>
+           <div class="clicks">
+            <ul id=optional>
+                <li>单</li>
+                <li>分2</li>
+            </ul><br>
+            <ul id="hook">
+                <li>无</li>
+                <li>普通</li>
+                <li>顶叉</li>
+                <li>6mm</li>
+                <li>13mm</li>
+            </ul><br>
+            <ul id="lining">
+                <li>无</li>
+                <li>米纺</li>
+                <li>薄纺</li>
+                <li>厚纺</li>
+                <li>50%</li>
+                <li>100%</li>
+            </ul><br>
+            <ul id="pleat">
+                <li>法国</li>
+                <li>荷兰</li>
+                <li>反</li>
+                <li>EYELET</li>
+                <li>大笔</li>
+                <li>小笔</li>
+                <li>英</li>
+                <li>管</li>
+                <li>上下管</li>
+            </ul><br>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="sprintPaper">
+        <div class="firstSheer">
+            <div class="sorderNumber">
+                <label>Order number #</label>
+                <input type="text" size="5">
+                <label>Order Date</label>
+                <input type="text" size="7" class="soDate" value=""><br>
+                <p >No.<input type="text" size="2" id='queue'>of <input type="text" size="2" >
+                    Eta <input type="text" size="7" class="setaDate">
+              <p> <input type="text" size="1">x<input type="text" size="1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop:
+                    <input type="text" size="1"> </p>
+                <p> Design: <input type="text" size="5"> Room: <input type="text" size="5"></p>
+                <p> Colour: <input type="text" size="5"></p>
+                <br>
+                <div class="clicks">
+                <ul id=topOpt>
+                    <li>平头</li>
+                    <li>突头</li>
+                </ul>
+                <ul id=pcOpt>
+                    <li>单</li>
+                    <li>分2</li>
+                </ul><br>
+                
+                <ul id="spleat">
+                    <li>法国</li>
+                    <li>荷兰</li>
+                    <li>反</li>
+                    <li>EYELET</li>
+                    <li>大笔</li>
+                    <li>小笔</li>
+                    <li>英</li>
+                    <li>管</li>
+                    <li>上下管</li>
+                </ul><br>
+                <ul id="shook">
+                    <li>挂钩</li>
+                    <li>无</li>
+                    <li>挂顶</li>
+                    <li>挂纱轨</li>
+                    <li>挂sheermagic</li>
+                    <li>挂布轨</li>
+                </ul><br>
+            </div>
+            </div>
+        </div>
+        </div>
+    <div class="buttons">
+        <button id=cbt>Curtain</button>
+        <button id="sbt">Sheer</button>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

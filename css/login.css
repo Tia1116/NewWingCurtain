@@ -1,0 +1,37 @@
+body{
+    background: url("../images/uploads/curtain04.jpge.jpg ") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-left: 375px;
+    padding-top: 50px;
+}
+
+.signHomepage{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px #333;
+    text-align: center;
+}
+
+.signHomepage img{
+    border-bottom: 3px solid orange;
+}
+.signHomepageBox{
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+}
+.signHomepage-inner div{
+    text-align: left;
+}
+.signHomepage-inner div label{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.signHomepage-inner div input {
+    
+    margin-top: 30px;
+}
